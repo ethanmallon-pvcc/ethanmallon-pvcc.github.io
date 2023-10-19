@@ -9,12 +9,18 @@ import datetime
 # define tax rate and prices
 SALES_TAX_RATE=0.055
 PR_TICKET=10.99
-
+PR_PCORN=12.99
+PR_DRINK=4.99
 #define global variables
 num_tickets=0
+num_pcorn=0
+num_drink=0
 subtotal=0
 sales_tax=0
 total=0
+tickets=0
+popcorn=0
+drinks=0
 ############# define program functions ############
 def main():
     more_tickets=True
@@ -32,23 +38,34 @@ def main():
 
 def get_user_data():
     global num_tickets
-    num_tickets=int(input("Number of movie tickets: "))
-
+    num_tickets=int(input("Number of Movie Tickets: "))
+    global num_pcorn
+    num_pcorn=int(input("Number of Popcorn Buckets: "))
+    global num_drink
+    num_drink=int(input("Number of Drinks: "))
+    
 def perform_calculations():
-    global subtotal, sales_tax, total
-    subtotal=num_tickets*PR_TICKET
-    sales_tax=subtotal*SALES_TAX_RATE
-    total=subtotal+sales_tax
+    global subtotal, sales_tax, total, tickets, popcorn, drinks
+    tickets=(num_tickets)*PR_TICKET
+    popcorn = num_pcorn*PR_PCORN
+    drinks = num_drink*PR_DRINK
+    sales_tax=(tickets+popcorn+drinks)*SALES_TAX_RATE
+    total=tickets+popcorn+drinks+sales_tax
 
 def display_results():
-    print('--------------------------')
+    USDform = '8,.2f'
+    line='-----------------------------'
+    print(line)
     print('**** CINEMA HOUSE MOVIES ****')
     print('Your neighborhood movie house')
-    print('--------------------------')
-    print('Tickets     $ ' + format(subtotal,'8,.2f'))
-    print('Sales Tax   $ '  + format(sales_tax,'8,.2f'))
-    print('Total       $ ' + format(total,'8,.2f'))
-    print('--------------------------')
+    print(line)
+    print('Tickets     $ ' + format(tickets,USDform))
+    print('Popcorn     $ ' + format(popcorn,USDform))
+    print('Drinks      $ ' + format(drinks,USDform))
+    print(line)
+    print('Sales Tax   $ '  + format(sales_tax,USDform))
+    print('Total       $ ' + format(total,USDform))
+    print(line)
     print(str(datetime.datetime.now()))
 
 
