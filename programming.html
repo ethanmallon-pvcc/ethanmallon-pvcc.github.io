@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<!--Name: Ethan Mallon-->
+<!--Program Purpose: This webpage is to provide definitions for various terms found in chapter 5.-->
+    <head>
+        <title>Ethan Mallon</title>
+        <style>
+a{color: #F8F7F6; text-decoration: none;font-weight: bold;}
+a:link {color: #F8F7F6;}
+a:visited {color:#b08356;}
+a:hover {color: #f5b87c}
+a:active {color: #F8F7F6;}
+body{background-color: #000000; color: #F8F7F6; font-family: Arial, Helvetica, sans-serif; background-image: url(ch5-wp.jpg); text-align: left;}
+h1{background-color: #000000; color: #F8F7F6; font-family: Arial, Helvetica, sans-serif; font-weight: bold;text-align: center;}
+h2{background-color: #000000; color: #F8F7F6; font-family: Arial, Helvetica, sans-serif; font-weight: bold;text-align: left;}
+table{width: 50%; color: #F8F7F6; background-color: #000000; margin: auto;border-color: #8C0313; text-align: left;}
+ul{background-color: #000000; color: #F8F7F6;font-family: Arial, Helvetica, sans-serif; font-weight: bold;text-align: left;}
+li{background-color: #000000; color: #F8F7F6; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 1.32em;text-align: left;}
+        </style>
+    </head>
+    <body>
+    <table border="16">
+        <tr style="text-align: center;">
+            <td><a href="index.html">Home</a></td>
+            <td><a href="https://www.pvcc.edu">PVCC</a></td>
+            <td><a href="https://www.w3schools.com/html/">W3 Schools</a></td>
+            <td><a href="https://github.com/">GitHub</a></td>
+            <td><a href="contactus.html">Contact Us</a></td>
+        </tr>
+    <tr><td colspan="5">
+        <h1>Chapter 5: Programming Algorithms & Software Testing</h1>
+        <table border="5" style="text-align: left; width: fit-content;">
+        <ul>
+            <li>Phases of computer program development:</li>
+                <ul>
+                <li>Phase 1: Understand the problem</li>
+                <li>Phase 2: Design an algorithm to solve the problem</li>
+                <li>Phase 3: Write the program code in appropriate language based on the algorithm</li>
+                <li>Phase 4: Enter the program and save</li>
+                <li>Phase 5: Execute the program</li>
+                <li>Phase 6: Test the program, find errors and debug, then retest</li>
+                <li>Phase 7: Document and evaluate the program</li>
+                </ul>
+            <li>Programming structures:</li>
+                <ul>
+                    <li>Sequential structure: Top-down execution</li>
+                    <li>Decision structures: if/then/else</li>
+                    <li>Iterative (looping):</li>
+                        <ul>
+                            <li>while loop: continue looping until something is true</li>
+                            <li>repeat/until loop: continue looping as long as something is true</li>
+                            <li>for loop: loop a given number of times</li>
+                        </ul>
+                    <li>Recursive structures:</li>
+                        <ul>
+                            <li>Repeat a set of instructions as a subtask of itself</li>
+                            <li>Repitition continues until:</li>
+                                <ul>
+                                    <li>degenerative case, which is a termination condition is met (degenerative case is also called a "base case")</li>
+                                </ul>
+                        </ul>
+                        </ul>
+            <li>Two classic programming/database problems</li>
+                        <ul>
+                            <li>Sorting: Descending order/Ascending order</li>
+                                <ul>
+                                    <li>Sorting numbers</li>
+                                    <li>Sorting strings (in accordance with ASCII values)</li>
+                                </ul>
+                            <li>Searching: find specific data that meet a certain criteria</li>
+                                <ul>
+                                    <li>in database:</li>
+                                    <ul>
+                                        <li>Filters: temporary search</li>
+                                        <li>Queries: search criteria are saved so the don't have to be recreated</li>
+                                    </ul>
+                                </ul>    
+                            <li>Two popular search techniques:</li>
+                                <ul>
+                                    <li>Sequential search: search from top to bottom or bottom to top, one item at a time</li>
+                                    <li>Binary search:</li>
+                                        <ul>
+                                            <li>only works if data is SORTED first</li>
+                                            <li>start in the middle, then go to half of that, etc.</li>
+                                        </ul>
+                                </ul>
+                                </ul>
+                <li>Two classic program goals:</li>
+                                <ul>
+                                    <li>Efficiency: Program takes minimal time and/or resources</li>
+                                    <li>Correctness: Program runs in expected ways and works for all expected conditions</li>
+                                </ul>
+                <li>Software testing and verification</li>
+                                <ul>
+                                    <li>Kinds of tests:</li>
+                                        <ul>
+                                            <li>Acceptance testing: system verification to ensure the system works as intended</li>
+                                            <li>Integration testing: tests to ensure sofware components and/or functions work together</li>
+                                            <li>Unit testing: tests each software units performance to ensure it works as expected</li>
+                                            <li>Functional testing: testing via emulating the scenarios the program was designed for</li>
+                                            <li>Performance testing: testing by giving the software different workloads</li>
+                                            <li>Regression testing: checking whether the addition of new features break or degrade functionality</li>
+                                            <li>Stress testing: finding how much strain a system can withstand before failure</li>
+                                            <li>Usability testing: validation of how well a customer can use the program for the relevant task</li>
+                                        </ul>
+                                    <li>Software testing is done to detect:</li>  
+                                        <ul>
+                                            <li>Architectural flaws</li>
+                                            <li>Poor design decisions</li>
+                                            <li>Invalid or incorrect functionality</li>
+                                            <li>Security vulnerabilities</li>
+                                            <li>Scalability issues</li>
+                                        </ul>
+                                    <li>Testing best practices:</li>  
+                                        <ul>
+                                            <li>Continuous testing: teams test each build as it becomes available, allowing for earlier testing and thus more time to fix issues</li>
+                                            <li>Configuration management: organizations centrally maintain assets and track software builds. Temas are given access to these assets as necessary</li>
+                                            <li>Service virtualization: simualtes the services and systmes not yet completed, allowing for earlier testing</li>
+                                            <li>Defect or "bug tracking": Automated tools allow teams to track defects, understand their scope and impact, and find related problems</li>
+                                            <li>Metrics and reporting: analytics allowing team members to share status, goals, and results, allowing for the monitor of project health and element relationships</li>
+                                        </ul>
+                                    <li><a href="https://www.ibm.com/topics/software-testing">From: IBM What is software testing?</a></li>    
+                                </ul>
+                        </ul>
+               
+        </tr>
+    </ul>
+    </table>
+    </td>
+    </tr>
+    </table>   
+   
+    </body>
+</html>
