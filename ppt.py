@@ -1,14 +1,6 @@
-#Name: Loren Lemarr
-#Name: Ethan Mallon
-#Prog Purpose: This program finds the cost of ordering from Pslermo Pizza
-#   Price for Small: $9.99
-#   price for Medium: $12.99
-#   price for Large: $17.99
-#   price for Extra Large: $21.99
-#   price for Drink: $3.99
-#   price for Breadsticks: $6.99
-#   Sales tax rate: 5.5%
 
+#Name: Ethan Mallon
+#Prog Purpose: This program finds the due personal property tax from vehicle information
 import datetime
 
 ######################     define global variables      ######################
